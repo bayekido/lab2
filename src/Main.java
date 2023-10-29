@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         // Create Student objects
-        Student student1 = new Student("Abel Ure", 1, new int[]{90, 85, 92});
+        Student student1 = new Student("Abel  baye", 1, new int[]{90, 85, 92});
         Student student2 = new Student("Nkita Derese", 2, new int[]{78, 88, 95});
 //greate work
         // Create Teacher objects
@@ -9,7 +9,7 @@ public class Main {
         Teacher teacher2 = new Teacher("Ms. Ermiyasa", "database");
 
         // Create College object
-        College college = new College("cs College");
+        College college = new College(" iscbb College");
 //all thsi is good work keep it up
         // Add students and teachers to the college
         college.addStudent(student1);
