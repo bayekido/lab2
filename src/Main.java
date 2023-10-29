@@ -1,17 +1,38 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Create Student objects
+        Student student1 = new Student("Abel Bira", 1, new int[]{90, 85, 92});
+        Student student2 = new Student("Alex Derese", 2, new int[]{78, 88, 95});
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // Create Teacher objects
+        Teacher teacher1 = new Teacher("Mr. Zele", "java");
+        Teacher teacher2 = new Teacher("Ms. Ermiyas", "database");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        // Create College object
+        College college = new College("computing&informatics College");
+
+        // Add students and teachers to the college
+        college.addStudent(student1);
+        college.addStudent(student2);
+        college.addTeacher(teacher1);
+        college.addTeacher(teacher2);
+
+        // Print college details
+        System.out.println("College Name: " + college.getName());
+
+        System.out.println("Students:");
+        for (Student student : college.getStudents()) {
+            System.out.println("Name: " + student.getName());
+            System.out.println("ID: " + student.getId());
+            System.out.println("Grades: " + java.util.Arrays.toString(student.getGrades()));
+            System.out.println();
+        }
+
+        System.out.println("Teachers:");
+        for (Teacher teacher : college.getTeachers()) {
+            System.out.println("Name: " + teacher.getName());
+            System.out.println("Subject: " + teacher.getSubject());
+            System.out.println();
         }
     }
 }
