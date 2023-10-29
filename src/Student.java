@@ -12,7 +12,7 @@ public class Student {
     public String getName() {
         return name;
     }
-
+//java coding
     public void setName(String name) {
         this.name = name;
     }
