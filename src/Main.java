@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         // Create Student objects
-        Student student1 = new Student("Abel Bira", 1, new int[]{90, 85, 92});
+        Student student1 = new Student("Abel Biranu", 1, new int[]{90, 85, 92});
         Student student2 = new Student("Alex Derese", 2, new int[]{78, 88, 95});
 
         // Create Teacher objects
         Teacher teacher1 = new Teacher("Mr. Zele", "java");
-        Teacher teacher2 = new Teacher("Ms. Ermiyas", "database");
+        Teacher teacher2 = new Teacher("Ms. Ermiyasa", "database");
 
         // Create College object
         College college = new College("computing&informatics College");
@@ -27,7 +27,7 @@ public class Main {
             System.out.println("Grades: " + java.util.Arrays.toString(student.getGrades()));
             System.out.println();
         }
-
+//we are doing well
         System.out.println("Teachers:");
         for (Teacher teacher : college.getTeachers()) {
             System.out.println("Name: " + teacher.getName());
